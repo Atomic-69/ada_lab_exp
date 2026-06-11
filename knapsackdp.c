@@ -42,7 +42,7 @@ int main()
     printf("\nMaximum Profit = %d\n", dp[n][m]);
     printf("Selected items: ");
     j = m;
-    for (i = n; i > 0; i--)
+    for (i = n; i > 0 && j>0 ; i--)
         if (dp[i][j] != dp[i - 1][j])
         {
             printf("%d ", i);
